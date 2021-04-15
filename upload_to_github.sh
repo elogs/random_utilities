@@ -16,4 +16,4 @@ enc_contents=$(tr -d "\n\r" < encoded.txt)
 
 curl -i -X PUT -H 'Authorization: token $GITHUB_TOKEN' \
 -d "{\"message\":\"incoming!\", \"content\":\""$enc_contents"\"}" \
-https://api.github.com/repos/Ma-Eloiza-Tabing/<repo_name>/contents/$FILE_NAME
+https://api.github.com/repos/elogs/<repo_name>/contents/$FILE_NAME
